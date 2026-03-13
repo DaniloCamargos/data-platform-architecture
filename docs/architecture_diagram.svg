@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="900" viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box { fill: #f4f6f8; stroke: #1f4e79; stroke-width: 2; }
+    .section { font-family: Arial, sans-serif; font-size: 18px; fill: #1f4e79; font-weight: bold; }
+    .label { font-family: Arial, sans-serif; font-size: 14px; fill: #000; }
+    .arrow { stroke: #1f4e79; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    .note { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1f4e79" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect x="20" y="20" width="760" height="860" rx="20" ry="20" fill="#fff" stroke="#ccc" stroke-width="2" />
+
+  <!-- Analytics -->
+  <text x="50" y="70" class="section">Analytics</text>
+  <rect x="50" y="85" width="700" height="110" class="box" />
+  <text x="70" y="115" class="label">Power BI / Looker / ML</text>
+  <text x="70" y="140" class="label">BigQuery (Gold)</text>
+
+  <!-- Data Warehouse -->
+  <text x="50" y="230" class="section">Data Warehouse</text>
+  <rect x="50" y="245" width="700" height="140" class="box" />
+  <text x="70" y="275" class="label">Silver (Apache Iceberg)</text>
+  <text x="70" y="300" class="label">Gold   (Apache Iceberg / BigQuery)</text>
+
+  <!-- Orquestração -->
+  <text x="50" y="420" class="section">Orquestração</text>
+  <rect x="50" y="435" width="700" height="110" class="box" />
+  <text x="70" y="465" class="label">Apache Airflow / Cloud Composer</text>
+  <text x="70" y="490" class="label">Cloud Functions (tasks)</text>
+
+  <!-- Data Lake -->
+  <text x="50" y="560" class="section">Data Lake</text>
+  <rect x="50" y="575" width="700" height="110" class="box" />
+  <text x="70" y="605" class="label">Cloud Storage (Bronze)</text>
+  <text x="70" y="630" class="label">Raw data + parquet / iceberg</text>
+
+  <!-- Ingestion layer -->
+  <text x="50" y="700" class="section">Ingestion layer</text>
+  <rect x="50" y="715" width="700" height="110" class="box" />
+  <text x="70" y="745" class="label">Batch / Streaming</text>
+  <text x="70" y="770" class="label">Pub/Sub, Kafka, APIs, arquivos</text>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M400 220 L400 240" />
+  <path class="arrow" d="M400 385 L400 405" />
+  <path class="arrow" d="M400 545 L400 565" />
+  <path class="arrow" d="M400 675 L400 695" />
+
+  <text x="520" y="825" class="note">Diagrama inspirado na imagem fornecida.</text>
+</svg>
