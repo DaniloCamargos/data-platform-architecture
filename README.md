@@ -4,7 +4,7 @@ Este repositório contém a estrutura inicial para executar a arquitetura Lakeho
 
 ## Diagrama de arquitetura
 
-![Arquitetura Lakehouse](docs/architecture_diagram.svg)
+<img width="1218" height="854" alt="image" src="https://github.com/user-attachments/assets/4f0298a0-a10e-4add-a98f-f2df78366cf4" />
 
 ## Estrutura do projeto
 
